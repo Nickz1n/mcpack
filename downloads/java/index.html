@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Java Edition - MCPACK</title>
+<!-- 
+    ===== FAVICONS ===== 
+-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/logos/icon-apple.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/logos/icon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/logos/icon-16.png"/>
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/logos/icon-64.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+<!-- 
+    ===== META DADOS ===== 
+-->
+<meta property="og:title" content="Downloads — MCPACK"/>
+<meta name="description" content="Faça downloads das texturas disponíveis no MCPACK"/>
+<meta property="og:description" content="Downloads - MCPack"/>
+<!-- 
+    ===== STYLESHEETS ===== 
+-->
+  <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"/>
+<!-- 
+    ===== SCRIPTS ===== 
+-->
+<script defer src="/js/mainjs.js"></script>
+<script defer src="/js/mainjq.js"></script>
+<script defer src="/js/pace.js"></script>
+<script src="/js/jquery.min.3.6.0.js"></script>
+<script src="/js/jquery.latest.js"></script>
+<!-- 
+    ===== EXTERNAL SCRIPTS ===== 
+-->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+  <body>
+    <div id="wrapper" class="sc_dl">
+    <nav id="nav">
+  <a href="/">
+    <img id="sclogo" src="/img/mcpack-logo.png" alt="MCPACK Logo"/>
+  </a>
+  <ul id="nav__list">
+    <li><a id="nav__home" href="/" data-i18n="home">Início</a></li>
+    <li><a id="nav__supporters" href="/" data-i18n="app">Aplicativo</a></li>
+    <li><a id="nav__videos" href="/" data-i18n="news">Novidades</a></li>
+    <li><a id="nav__chat" href="/" target="_blank" rel="noreferrer" data-i18n="about">Sobre Nós</a></li>
+    <li><a id="nav__downloads" href="/downloads/" data-i18n="downloads">Baixar Texturas</a></li>
+    <li><a id="nav__media" href="/media/" data-i18n="media">Mídias</a></li>
+          <label class="switch">
+        <input class="toggle" type="checkbox" id="lang-toggle"/>
+            <span class="slider"></span>
+            <span class="card-side"></span>
+      </label>
+  </ul>
+</nav>
+<nav id="nav_mobile">
+  <ul id="nav__list_mobile">
+    <li id="nav__home_mobile">
+      <a href="/" data-i18n="nav_home" data-i18n="home"><img class="icon" src="/img/icons/nav_home-white.webp" alt="Home Icon" /></a>
+    </li>
+    <li id="nav__supporters_mobile">
+      <a href="/" data-i18n="support">
+        <img class="icon" src="/img/icons/nav_support-white.webp" alt="Support Icon"/>
+        Doações
+      </a>
+    </li>
+    <li id="nav__videos_mobile">
+      <a href="/" data-i18n="news">
+        <img class="icon" src="/img/icons/nav_vids-white.webp" alt="News Icon" />
+        Novidades
+      </a>
+    </li>
+    <li id="nav__chat_mobile">
+      <a href="/" target="_blank" rel="noreferrer" data-i18n="discord">
+        <img class="icon" src="/img/icons/nav_chat-white.webp" alt="Discord Icon" /></a>
+    </li>
+    <li id="nav__downloads_mobile">
+      <a href="/downloads/" data-i18n="downloads_mobile">
+        <img class="icon" src="/img/icons/nav_dl-white.webp" alt="Downloads Icon" />
+        Baixar
+      </a>
+    </li>
+    <li id="nav__media_mobile">
+      <a href="/" data-i18n="media">
+        <img class="icon" src="/img/icons/nav_media-white.webp" alt="Media Icon" />
+      Mídias
+      </a>
+    </li>
+    <li>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button id="lang-toggle" class="lang-current">🌐 PT</button>
+        <ul class="lang-menu">
+          <li data-lang="pt" data-i18n="lang_pt"></li>
+          <li data-lang="en" data-i18n="lang_us"></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+<header class="header-small">
+  <div class="static">
+    <a class="btn btn-tri" href="/downloads/">
+      <img src="/img/icons/arrowLeft-white.webp" alt="back icon"/><t data-i18n="button_back">Voltar</t></a>
+    <span><img src="/img/icons/javaEd-accent.webp" alt="Java icon" /><t data-i18n="span_java">Java Edition</t></span>
+<!--
+    ==== EDIÇÃO JAVA ====
+-->
+    <h1 data-i18n="java_title">Edição Java</h1>
+    <h3 data-i18n="java_description">Aprimore sua experiência no Minecraft com nossas texturas.</h3>
+  </div>
+  <div class="header-img__wrapper">
+    <img
+      class="rellax header-small-bg"
+      src="/img/features/javaheader.png"
+      alt="MCPack Java Screenshot"
+      data-rellax-speed="-15"
+    />
+  </div>
+</header>
+<main>
+  <section id="updates" class="stripblack cards-4x">
+    <div class="static">
+      <br/><br/>
+      <h2 data-i18n="java_title_component">Baixar Texturas Edição Java</h2>
+      <p data-i18n="java_description_component">Explore todas as texturas do MCPACK</p>
+      <div class="texture-carousel-wrapper">
+        <button class="carousel-arrow left" id="carouselPrev" aria-label="Anterior">
+          <img src="/img/icons/arrowLeft-white.webp" alt="Anterior" />
+        </button>
+        <div class="x4Grid" id="textureCarousel">
+        </div>
+        <button class="carousel-arrow right" id="carouselNext" aria-label="Próximo">
+          <img src="/img/icons/arrowRight-white.webp" alt="Próximo" />
+        </button>
+      </div>
+    </div>
+  </section>
+  <script>
+    const textures = [
+      {
+        name: "Sunflower [32x]",
+        img: "/img/resourcepack/sunflower.png",
+        desc: "Uma textura de flores de girassol, jogue com muito FPS, qualidade e cores vibrantes.",
+        version: "1.8.9",
+        link: "/pack/sunflower"
+      },
+      {
+        name: "Lothus [32x]",
+        img: "/img/resourcepack/lothus.png",
+        desc: "Uma textura roxa focada na flor mais linda noturna com qualidade e cores vibrantes.",
+        version: "1.8.9",
+        link: "/pack/lothus"
+      },
+      {
+        name: "Hylex [512x]",
+        img: "/img/resourcepack/hylex.png",
+        desc: "Textura de alta definição, com foco em detalhes incríveis, qualidade e cores vibrantes.",
+        version: "1.8.9",
+        link: "/pack/hylex"
+      }
+    ];
+
+    const perPage = 3;
+    let currentPage = 0;
+
+    function renderTextures() {
+      const grid = document.getElementById('textureCarousel');
+      grid.innerHTML = '';
+      const start = currentPage * perPage;
+      const end = Math.min(start + perPage, textures.length);
+      for (let i = start; i < end; i++) {
+        const t = textures[i];
+        grid.innerHTML += `
+          <a href="${t.link}" class="card">
+            <div class="thumb" style="background-image: url(${t.img})"></div>
+            <article>
+              <h2 class="name">${t.name}</h2>
+              <h4 class="description">${t.desc}</h4>
+              <span>
+                Versão: ${t.version}
+                <img src="/img/icons/addOn-gray.webp" class="game-version" alt="add-on icon" title="Java Add-on"/>
+              </span>
+            </article>
+          </a>
+        `;
+      }
+    }
+
+    function updateArrows() {
+      document.getElementById('carouselPrev').disabled = currentPage === 0;
+      document.getElementById('carouselNext').disabled = (currentPage + 1) * perPage >= textures.length;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      renderTextures();
+      updateArrows();
+
+      document.getElementById('carouselPrev').addEventListener('click', function() {
+        if (currentPage > 0) {
+          currentPage--;
+          renderTextures();
+          updateArrows();
+        }
+      });
+
+      document.getElementById('carouselNext').addEventListener('click', function() {
+        if ((currentPage + 1) * perPage < textures.length) {
+          currentPage++;
+          renderTextures();
+          updateArrows();
+        }
+      });
+    });
+  </script>
+  <style>
+    .texture-carousel-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .carousel-arrow {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .carousel-arrow:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+    .x4Grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      width: 100%;
+    }
+    @media (max-width: 900px) {
+      .x4Grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .x4Grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</main>
+<div class="stripdark" data-component="/components/community.html"></div>
+<div data-component="/components/footer.html"></div>
+<script src="/js/language.js"></script>
+<script src="/js/components.js"></script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('mcpack', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Donate',
+    'floating-chat.donateButton.background-color': '#794bc4',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+<script>
+  jQuery(document).ready(function () {
+    jQuery("time.timeago").timeago();
+  });
+</script>
+
+<a id="scrl-top" href="#wrapper">
+  <img src="/img/icons/arrowUp-white.webp" alt="white arrow" />
+</a>
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  var getWidth = window.matchMedia("(min-width: 1100px)");
+
+  function scrollFunction() {
+    if (document.body.scrollTop >= 1 || (document.documentElement.scrollTop >= 1 && getWidth.matches)) {
+      document.getElementById("nav").style.height = "50px";
+      document.getElementById("sclogo").style.height = "50px";
+      document.getElementById("sclogo").style.top = "11px";
+      document.getElementById("nav").style.background = "#00000060";
+      document.getElementById("nav").style.backdropFilter = "blur(10px)";
+
+      document.getElementById("nav").style.top = "15px";
+    } else {
+      document.getElementById("nav").style.height = "75px";
+      document.getElementById("sclogo").style.height = "75px";
+      document.getElementById("sclogo").style.top = "20px";
+      document.getElementById("nav").style.background = "transparent";
+      document.getElementById("nav").style.backdropFilter = "none";
+
+      document.getElementById("nav").style.top = "0px";
+    }
+  }
+</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script>
+    var rellax = new Rellax('.rellax', {
+        callback: function (position) {
+        },
+        breakpoints: [576, 768, 1024]
+    });
+</script>
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script src="/js/jquery.timeago.js"></script>
+<script src="/js/nanobar.min.js"></script>
+<script>
+  var loadingBar = new Nanobar({
+    target: document.getElementById("color"),
+  });
+  loadingBar.go(100);
+</script>
+</body>
+</html>

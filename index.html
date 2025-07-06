@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MCPACK — Minecraft Resource Pack</title>
+<!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/logos/icon-apple.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/logos/icon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/logos/icon-16.png"/>
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/logos/icon-64.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+<!-- Stylesheet -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<!-- Scripts -->
+<script defer src="js/mainjs.js"></script>
+<script defer src="js/mainjq.js"></script>
+<script defer src="js/pace.js"></script>
+<script src="js/jquery.min.3.6.0.js"></script>
+<script src="js/jquery.latest.js"></script>
+<!-- external scripts -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<!-- Fonte -->
+ <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+ <link href="https://fonts.cdnfonts.com/css/osp-din" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper" class="index">
+<!-- Navegador -->
+<nav id="nav">
+  <a href="/">
+    <img id="sclogo" src="img/mcpack-logo.png" alt="MCPACK Logo"/>
+  </a>
+  <ul id="nav__list">
+    <li><a id="nav__home" href="/" data-i18n="home">Início</a></li>
+    <li><a id="nav__supporters" href="/" data-i18n="app">Aplicativo</a></li>
+    <li><a id="nav__videos" href="/" data-i18n="news">Novidades</a></li>
+    <li><a id="nav__chat" href="/" target="_blank" rel="noreferrer" data-i18n="about">Sobre Nós</a></li>
+    <li><a id="nav__downloads" href="/downloads/" data-i18n="downloads">Baixar Texturas</a></li>
+    <li><a id="nav__media" href="/media/" data-i18n="media">Mídias</a></li>
+          <label class="switch">
+        <input class="toggle" type="checkbox" id="lang-toggle"/>
+            <span class="slider"></span>
+            <span class="card-side"></span>
+      </label>
+  </ul>
+</nav>
+<nav id="nav_mobile">
+  <ul id="nav__list_mobile">
+    <li id="nav__home_mobile">
+      <a href="/" data-i18n="nav_home" data-i18n="home"><img class="icon" src="/img/icons/nav_home-white.webp" alt="Home Icon" /></a>
+    </li>
+    <li id="nav__supporters_mobile">
+      <a href="/" data-i18n="support">
+        <img class="icon" src="/img/icons/nav_support-white.webp" alt="Support Icon"/>
+        Doações
+      </a>
+    </li>
+    <li id="nav__videos_mobile">
+      <a href="/" data-i18n="news">
+        <img class="icon" src="/img/icons/nav_vids-white.webp" alt="News Icon" />
+        Novidades
+      </a>
+    </li>
+    <li id="nav__chat_mobile">
+      <a href="/" target="_blank" rel="noreferrer" data-i18n="discord">
+        <img class="icon" src="/img/icons/nav_chat-white.webp" alt="Discord Icon" /></a>
+    </li>
+    <li id="nav__downloads_mobile">
+      <a href="/downloads/" data-i18n="downloads_mobile">
+        <img class="icon" src="/img/icons/nav_dl-white.webp" alt="Downloads Icon" />
+        Baixar
+      </a>
+    </li>
+    <li id="nav__media_mobile">
+      <a href="/" data-i18n="media">
+        <img class="icon" src="/img/icons/nav_media-white.webp" alt="Media Icon" />
+      Mídias
+      </a>
+    </li>
+    <li>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button id="lang-toggle" class="lang-current">🌐 PT</button>
+        <ul class="lang-menu">
+          <li data-lang="pt" data-i18n="lang_pt"></li>
+          <li data-lang="en" data-i18n="lang_us"></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+    <script>
+      const div = document.getElementById("nav__home");
+      div.style.color = "#6f29fc";
+    </script>
+<div class="dingdong"></div>
+<!-- Slide Show -->
+<header class="slideshow" id="js-header">
+  <div class="slideshow__slide js-slider-home-slide is-current" data-slide="1">
+    <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+      <div class="slideshow__slide-background-load-wrap background-absolute">
+        <div class="slideshow__slide-background-load background-absolute">
+          <div class="slideshow__slide-background-wrap background-absolute">
+            <div class="slideshow__slide-background background-absolute">
+              <div class="slideshow__slide-image-wrap background-absolute">
+                <div
+                  class="slideshow__slide-image background-absolute"
+                  style="background-image: url('/img/slider/nicho.png')"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow__slide-caption">
+      <div class="slideshow__slide-caption-text">
+        <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+          <span>
+            <img src="img/badge/java.png" width="150px" alt="java icon" />
+          </span>
+          <h2><img src="img/badge/lothus_text.png" width="300px" alt="java icon"/></h2>
+          <h3 class="slide" data-i18n="slide_one_phrase">Descubra a beleza da textura Lótus, uma jornada roxa no Minecraft. Inspirado na flor mística, cada bloco ganha vida com elegância. Transforme seu mundo em uma experiência única e imersiva. 🪷</h3>
+        <br/>
+          <div class="slideshow__btns">
+            <a class="button" href="/downloads/"><t data-i18n="button_download">Baixar</t></a>
+            <a class="btn btn-link" href="/downloads/bedrock/"><t data-i18n="button_seemore">Ler mais</t><img src="/img/icons/plus-white.webp" alt="plus icon"/></a>
+            <a class="btn btn-link" href="/downloads/addons/"><t data-i18n="button_assets">Ver conteúdo</t><img src="/img/icons/addOn-white.webp" alt="add-on icon"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Slide 2 -->
+  <div class="slideshow__slide js-slider-home-slide is-next" data-slide="2">
+    <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+      <div class="slideshow__slide-background-load-wrap background-absolute">
+        <div class="slideshow__slide-background-load background-absolute">
+          <div class="slideshow__slide-background-wrap background-absolute">
+            <div class="slideshow__slide-background background-absolute">
+              <div class="slideshow__slide-image-wrap background-absolute">
+                <div
+                  class="slideshow__slide-image background-absolute"
+                  style="background-image: url('/img/slider/Nick.png')"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow__slide-caption">
+      <div class="slideshow__slide-caption-text">
+        <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+          <span>
+            <img src="img/badge/java.png" width="150px" alt="java icon" />
+          </span>
+          <h2>
+            <img src="img/badge/sunflower_text.png" width="400px" alt="java icon"/>
+          </h2>
+          <h4 class="slide" data-i18n="slide_two_phrase">O Girassol traz o calor do pôr do sol direto para o seu Minecraft. Com tons dourados e alaranjados, cada detalhe irradia tranquilidade. Deixe seu mundo brilhar com a beleza suave do crepúsculo. ✨</h4>
+           <br/>
+          <div class="slideshow__btns">
+            <a class="button" href="/downloads/"><t data-i18n="button_download">Baixar</t></a>
+            <a class="btn btn-link" href="/downloads/bedrock/"><t data-i18n="button_seemore">Ler mais</t><img src="/img/icons/plus-white.webp" alt="plus icon"/></a>
+            <a class="btn btn-link" href="/downloads/addons/"><t data-i18n="button_assets">Ver conteúdo</t><img src="/img/icons/addOn-white.webp" alt="add-on icon"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Slide 3 -->
+  <div class="slideshow__slide js-slider-home-slide is-next" data-slide="3">
+    <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+      <div class="slideshow__slide-background-load-wrap background-absolute">
+        <div class="slideshow__slide-background-load background-absolute">
+          <div class="slideshow__slide-background-wrap background-absolute">
+            <div class="slideshow__slide-background background-absolute">
+              <div class="slideshow__slide-image-wrap background-absolute">
+                <div
+                  class="slideshow__slide-image background-absolute"
+                  style="background-image: url('/img/slider/thumb.png')"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow__slide-caption">
+      <div class="slideshow__slide-caption-text">
+        <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+          <span>
+            <img src="img/badge/java.png" width="150px" alt="java icon" />
+          </span>
+          <h2>
+            <img src="img/badge/hylex_text.png" width="300px" alt="java icon"/>
+          </h2>
+          <h3 class="slide" data-i18n="slide_three_phrase">Azul-marinho, deixe toda a folhagem do Minecraft EXUBERANTE, natural e variada, com cores vibrantes para alegrar sua jogabilidade. 🌿</h3>
+           <br/>
+          <div class="slideshow__btns">
+            <a class="button" href="/downloads/"><t data-i18n="button_download">Baixar</t></a>
+            <a class="btn btn-link" href="/downloads/bedrock/"><t data-i18n="button_seemore">Ler mais</t><img src="/img/icons/plus-white.webp" alt="plus icon"/></a>
+            <a class="btn btn-link" href="/downloads/addons/"><t data-i18n="button_assets">Ver conteúdo</t><img src="/img/icons/addOn-white.webp" alt="add-on icon"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- arrows -->
+  <div class="c-header-home_footer">
+    <div class="o-container">
+      <div class="c-header-home_controls -nomobile o-button-group">
+        <div class="js-parallax is-inview display-flex" data-speed="1" data-position="top" data-target="#js-header">
+          <!-- left arrow -->
+          <div class="arrow-slide arrow-slide-prev js-slider-home-prev">
+            <img class="icon" src="/img/icons/arrowLeft-white.webp" alt="arrow" />
+            <img class="icon icon-hover" src="/img/icons/arrowLeft-black.webp" alt="arrow" />
+          </div>
+          <!-- right arrow -->
+          <div class="arrow-slide arrow-slide-next js-slider-home-next">
+            <img class="icon" src="/img/icons/arrowRight-white.webp" alt="arrow" />
+            <img class="icon icon-hover" src="/img/icons/arrowRight-black.webp" alt="arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header><script src="js/slideshow.js"></script>
+<main>
+    <div data-component="/components/pack-details.html"></div>
+    <div data-component="/components/updates.html"></div>
+    <div data-component="/components/explore.html"></div>
+    <!--<div data-component="/components/assets.html"></div>-->
+    <div data-component="/components/blog.html"></div>
+    <div data-component="/components/community.html"></div>
+</main>
+<div data-component="/components/footer.html"></div>
+<script src="js/language.js"></script>
+<script src="js/components.js"></script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('mcpack', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Donate',
+    'floating-chat.donateButton.background-color': '#794bc4',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+<!-- timeago.js -->
+<script>
+  jQuery(document).ready(function () {
+    jQuery("time.timeago").timeago();
+  });
+</script>
+
+<!-- ===   Page Loading Progress Bar   === -->
+<script src="/js/nanobar.min.js"></script>
+<script>
+  var loadingBar = new Nanobar({
+    target: document.getElementById("color"),
+  });
+  loadingBar.go(100);
+</script>
+
+<!-- ===   RETURN TO TOP BUTTON   === -->
+<a id="scrl-top" href="#wrapper">
+  <img src="/img/icons/arrowUp-white.webp" alt="white arrow" />
+</a>
+
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  var getWidth = window.matchMedia("(min-width: 1100px)");
+
+  function scrollFunction() {
+    if (document.body.scrollTop >= 1 || (document.documentElement.scrollTop >= 1 && getWidth.matches)) {
+      // scrolling
+      document.getElementById("nav").style.height = "50px";
+      document.getElementById("sclogo").style.height = "50px";
+      document.getElementById("sclogo").style.top = "11px";
+      document.getElementById("nav").style.background = "#00000060";
+      document.getElementById("nav").style.backdropFilter = "blur(10px)";
+
+      document.getElementById("nav").style.top = "15px";
+    } else {
+      // scrolled to top
+      document.getElementById("nav").style.height = "75px";
+      document.getElementById("sclogo").style.height = "75px";
+      document.getElementById("sclogo").style.top = "20px";
+      document.getElementById("nav").style.background = "transparent";
+      document.getElementById("nav").style.backdropFilter = "none";
+
+      document.getElementById("nav").style.top = "0px";
+    }
+  }
+</script>
+
+<!-- Continue to site -->
+<script>
+  $(".js-go-to-site").click(function () {
+    location.reload();
+  });
+</script>
+
+<!-- close popup -->
+<script>
+  $(".closePopup").click(function () {
+    document.querySelector("#fab-enabled").style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
+  });
+</script>
+
+
+<!-- INSTANT.PAGE -->
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<!-- TIMEAGO.JS -->
+<script src="/js/jquery.timeago.js"></script>
+<script>
+  $(function() {
+    setTimeout(function() {
+    $('.mcc_exploreSlides').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        prevArrow: `<button type="button" class="slick-prev" aria-label="Anterior">
+          <span class="mdi mdi-chevron-left"></span>
+        </button>`,
+        nextArrow: `<button type="button" class="slick-next" aria-label="Próximo">
+          <span class="mdi mdi-chevron-right"></span>
+        </button>`,
+        customPaging: function(slider, i) {
+          return `
+            <button type="button" tabindex="0">
+              <span class="mdi mdi-circle"></span>
+            </button>
+          `;
+        }
+      });
+    }, 500);
+  });
+</script>
+<script defer src="js/slick.js"></script>
+    </div>
+  </body>
+</html>

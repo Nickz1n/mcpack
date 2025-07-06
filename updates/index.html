@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+<title>All Updates — MCPACK</title>
+<meta name="description" content="View all updates of the Sapixcraft resourcepack."/>
+<meta property="og:description" content="View all updates of the Sapixcraft resourcepack."/>
+
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/download.min.css" />
+<link rel="stylesheet" href="../css/mods.min.css" />
+<link rel="stylesheet" href="../css/preview.min.css" />
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/img/logos/icon-apple.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/img/logos/icon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/img/logos/icon-16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<meta property="og:title" content=""/>
+<meta name="description" content=""/>
+<meta property="og:description" content=""/>
+<meta name="author" content="MCPack"/>
+<meta name="subject" content="The Sapixcraft Resourcepack for Minecraft" />
+<meta property="og:image" content="https://sapixcraft.com/img/ogImage.webp" />
+<meta name="og:site_name" content="Sapixcraft.com" />
+<meta property="og:url" content="https://sapixcraft.com" />
+<meta
+  name="keywords"
+  content="sapixcraft, resourcepack, texturepack, sapix, minecraft, Vector, 1.21.4, 1.21, 1.20, 1.19, 1.18, 1.17, 1.16, 1.15, 1.14, updates, community, patches, download, texturepacks, resourcepacks, mod, mods, support, addons, addon, add-on"
+/>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script defer src="/js/mainjs.js"></script>
+<script defer src="/js/mainjq.js"></script>
+<script defer src="/js/pace.js"></script>
+<script src="/js/jquery.min.3.6.0.js"></script>
+<script src="/js/jquery.latest.js"></script>
+<!-- external scripts -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<body>
+ <div id="wrapper" class="index">
+<!-- Navegador -->
+<nav id="nav">
+  <a href="/">
+    <img id="sclogo" src="img/mcpack-logo.png" alt="MCPACK Logo"/>
+  </a>
+  <ul id="nav__list">
+    <li><a id="nav__home" href="/" data-i18n="home">Início</a></li>
+    <li><a id="nav__supporters" href="/" data-i18n="app">Aplicativo</a></li>
+    <li><a id="nav__videos" href="/" data-i18n="news">Novidades</a></li>
+    <li><a id="nav__chat" href="/" target="_blank" rel="noreferrer" data-i18n="about">Sobre Nós</a></li>
+    <li><a id="nav__downloads" href="/downloads/" data-i18n="downloads">Baixar Texturas</a></li>
+    <li><a id="nav__media" href="/media/" data-i18n="media">Mídias</a></li>
+    <li>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button id="lang-toggle" class="lang-current">🌐 PT</button>
+        <ul class="lang-menu">
+          <li data-lang="pt" data-i18n="lang_pt">Português</li>
+          <li data-lang="en" data-i18n="lang_us">English</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+  <!--<div class="theme-overlay"></div>-->
+
+<div class="new-release">
+  <h5>MCPACK já disponível no PVPRP <a target="_blank" rel="noreferrer" href="/">Clique aqui</a></h5>
+</div>
+
+<nav id="nav_mobile">
+  <ul id="nav__list_mobile">
+    <li id="nav__home_mobile">
+      <a href="/" data-i18n="nav_home" data-i18n="home"><img class="icon" src="/img/icons/nav_home-white.webp" alt="Home Icon" /></a>
+    </li>
+    <li id="nav__supporters_mobile">
+      <a href="/" data-i18n="support">
+        <img class="icon" src="/img/icons/nav_support-white.webp" alt="Support Icon"/>
+        Doações
+      </a>
+    </li>
+    <li id="nav__videos_mobile">
+      <a href="/" data-i18n="news">
+        <img class="icon" src="/img/icons/nav_vids-white.webp" alt="News Icon" />
+        Novidades
+      </a>
+    </li>
+    <li id="nav__chat_mobile">
+      <a href="/" target="_blank" rel="noreferrer" data-i18n="discord">
+        <img class="icon" src="/img/icons/nav_chat-white.webp" alt="Discord Icon" /></a>
+    </li>
+    <li id="nav__downloads_mobile">
+      <a href="/downloads/" data-i18n="downloads_mobile">
+        <img class="icon" src="/img/icons/nav_dl-white.webp" alt="Downloads Icon" />
+        Baixar
+      </a>
+    </li>
+    <li id="nav__media_mobile">
+      <a href="/" data-i18n="media">
+        <img class="icon" src="/img/icons/nav_media-white.webp" alt="Media Icon" />
+      Mídias
+      </a>
+    </li>
+    <li>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button id="lang-toggle" class="lang-current">🌐 PT</button>
+        <ul class="lang-menu">
+          <li data-lang="pt" data-i18n="lang_pt"></li>
+          <li data-lang="en" data-i18n="lang_us"></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div class="nav-spacer"></div>
+    <main>
+    <section class="updatesList cards-4x">
+          <div class="static">
+            <h1>Sapixcraft Updates</h1>
+            <h3>All of the updates and changelogs of Sapixcraft!</h3>
+            <div class="x4Grid">
+                <div class="premium-card">
+            <p class="new-update-bubble">
+              <img src="/img/icons/new-white.webp" alt="new icon" class="icon" />
+                Nova Textura
+            </p>
+          <a href="/" class="card">
+          <div class="thumb" style="background-image: url(/img/resourcepack/sunflower.png)"></div>
+            <article>
+            <h2 class="name">Sunflower [32x]</h2>
+            <h4 class="description">
+              Uma textura de flores de girassol, jogue com muito FPS, qualidade e cores vibrantes. 
+              <span>
+                Adquirir textura
+                <img src="/img/icons/angleRight-accent.webp" />
+              </span>
+            </h4>
+            <span>
+              <img class="icon" src="/img/icons/star-gold.webp" alt="gold star icon" title="Exclusive" />
+              Updated
+              <time class="timeago" datetime="19 Feb 2025 20:30">19 Feb 2025</time>
+              <img src="/img/icons/addOn-gray.webp" class="game-version" alt="add-on icon" title="Java Add-on" />
+            </span>
+            </article>
+            </a>
+          </div>
+          
+        <a href="/" class="card">
+          <div class="thumb" style="background-image: url(/img/resourcepack/lothus.png)"></div>
+            <article>
+            <h2 class="name">Lothus [32x]</h2>
+            <h4 class="description">
+              Uma textura roxa focada na flor mais linda noturna, jogue com muito FPS, qualidade e cores vibrantes.
+              <span>
+                Adquirir textura
+                <img src="/img/icons/angleRight-accent.webp" />
+              </span>
+            </h4>
+            <span>
+              <img class="icon" src="/img/icons/star-gold.webp" alt="gold star icon" title="Exclusive" />
+              Updated
+              <time class="timeago" datetime="20 Jul 2024 10:15">20 Jul 2024</time>
+              <img src="/img/icons/addOn-gray.webp" class="game-version" alt="add-on icon" title="Java Add-on" />
+            </span>
+            </article>
+            </a>
+        <a href="/" class="card">
+          <div class="thumb" style="background-image: url(/img/resourcepack/hylex.png)"></div>
+            <article>
+            <h2 class="name">Hylex [512x]</h2>
+            <h4 class="description">
+              Textura de alta definição, com foco em cores vibrantes e detalhes incríveis, jogue com muito FPS, qualidade e cores vibrantes. 
+              <span>
+                Adquirir textura
+                <img src="/img/icons/angleRight-accent.webp" />
+              </span>
+            </h4>
+            <span>
+              <img class="icon" src="/img/icons/star-gold.webp" alt="gold star icon" title="Exclusive" />
+              Updated
+              <time class="timeago" datetime="22 May 2024 19:00">22 May 2024</time>
+              <img src="/img/icons/addOn-gray.webp" class="game-version" alt="add-on icon" title="Java Add-on" />
+            </span>
+          </article>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<div data-component="/components/footer.html"></div>
+<script src="js/language.js"></script>
+<script src="js/components.js"></script>
+<!-- timeago.js -->
+<script>
+  jQuery(document).ready(function () {
+    jQuery("time.timeago").timeago();
+  });
+</script>
+
+<!-- ===   Page Loading Progress Bar   === -->
+<script src="/js/nanobar.min.js"></script>
+<script>
+  var loadingBar = new Nanobar({
+    target: document.getElementById("color"),
+  });
+  loadingBar.go(100);
+</script>
+
+<!-- ===   RETURN TO TOP BUTTON   === -->
+<a id="scrl-top" href="#wrapper">
+  <img src="/img/icons/arrowUp-white.webp" alt="white arrow" />
+</a>
+
+<!-- ===   RESIZE NAV + LOGO   === -->
+<script>
+  // When the user scrolls down 80px from the top of the page, resize.
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  var getWidth = window.matchMedia("(min-width: 1100px)");
+  //scrollFunction(x); // Call listener function at run time
+  //x.addListener(scrollFunction); // Attach listener function on state changes
+
+  function scrollFunction() {
+    if (document.body.scrollTop >= 1 || (document.documentElement.scrollTop >= 1 && getWidth.matches)) {
+      // scrolling
+      document.getElementById("nav").style.height = "50px";
+      document.getElementById("sclogo").style.height = "50px";
+      document.getElementById("sclogo").style.top = "11px";
+      document.getElementById("nav").style.background = "#00000060";
+      document.getElementById("nav").style.backdropFilter = "blur(10px)";
+
+      document.getElementById("nav").style.top = "15px";
+    } else {
+      // scrolled to top
+      document.getElementById("nav").style.height = "75px";
+      document.getElementById("sclogo").style.height = "75px";
+      document.getElementById("sclogo").style.top = "20px";
+      document.getElementById("nav").style.background = "transparent";
+      document.getElementById("nav").style.backdropFilter = "none";
+
+      document.getElementById("nav").style.top = "0px";
+    }
+  }
+</script>
+
+<!-- Continue to site -->
+<script>
+  $(".js-go-to-site").click(function () {
+    location.reload();
+  });
+</script>
+
+<!-- close popup -->
+<script>
+  $(".closePopup").click(function () {
+    document.querySelector("#fab-enabled").style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
+  });
+</script>
+
+<!-- === Mailchimp Newsletter === -->
+<script>
+  function validateJS() {
+    var script = document.createElement("script");
+    script.src = "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
+    document.head.appendChild(script);
+  }
+
+  validateJS();
+
+  // VALIDATE
+  (function ($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = "EMAIL";
+    ftypes[0] = "email";
+    fnames[1] = "FNAME";
+    ftypes[1] = "text";
+    fnames[2] = "LNAME";
+    ftypes[2] = "text";
+    fnames[3] = "ADDRESS";
+    ftypes[3] = "address";
+    fnames[4] = "PHONE";
+    ftypes[4] = "phone";
+    fnames[5] = "BIRTHDAY";
+    ftypes[5] = "birthday";
+  })(jQuery);
+  var $mcj = jQuery.noConflict(true);
+</script>
+
+<!-- === Cookies bar === -->
+<div id="myCookieConsent">
+  <p>This site uses <a href="https://sapixcraft.com/privacy-policy">cookies</a>.</p>
+  <a id="cookieButton">Accept</a>
+</div>
+
+<!-- === Cookies bar script === -->
+<script>
+  function GetCookie(name) {
+    var arg = name + "=";
+    var alen = arg.length;
+    var clen = document.cookie.length;
+    var i = 0;
+    while (i < clen) {
+      var j = i + alen;
+      if (document.cookie.substring(i, j) == arg) return "here";
+      i = document.cookie.indexOf(" ", i) + 1;
+      if (i == 0) break;
+    }
+    return null;
+  }
+
+  function testFirstCookie() {
+    var offset = new Date().getTimezoneOffset();
+    if (offset >= -180 && offset <= 0) {
+      // European time zones
+      var visit = GetCookie("cookieCompliancyAccepted");
+      if (visit == null) {
+        $("#myCookieConsent").animate(
+          {
+            marginBottom: "+=250px",
+          },
+          500
+        ); // Show warning
+        $("#myCookieConsent").css("display", "flex");
+      } else {
+        // Already accepted
+      }
+    }
+  }
+  $(document).ready(function () {
+    $("#cookieButton").click(function () {
+      console.log("Accept");
+      var expire = new Date();
+      expire = new Date(expire.getTime() + 7776000000);
+      document.cookie = "cookieCompliancyAccepted=here; expires=" + expire + ";path=/";
+      $("#myCookieConsent").animate(
+        {
+          marginBottom: "-=250px",
+        },
+        500
+      );
+    });
+    testFirstCookie();
+  });
+  // Cookie Compliancy END
+</script>
+
+<!-- INSTANT.PAGE -->
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+
+<!-- TIMEAGO.JS -->
+<script src="//sapixcraft.com/js/jquery.timeago.js"></script>
+    </div>
+
+    <!-- timeago.js -->
+    <script src="https://sapixcraft.com/js/jquery.timeago.js"></script>
+  </body>
+</html>
